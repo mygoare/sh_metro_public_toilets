@@ -1,0 +1,30 @@
+<view class="header" style='background-color: {{headerColor}};'></view>
+<view class="page__hd">
+    <view class="section">
+      <view class="section__title"></view>
+      <picker bindchange="bindPickerChange" value="{{line_index}}" range="{{lines}}" range-key="line_name">
+        <view class="picker">
+           {{lines[line_index]["line_name"] || '选择地铁线路'}} 
+        </view>
+      </picker>
+    </view>
+
+    <view class="section">
+      <view class="section__title"></view>
+      <picker bindchange="bindStopChange" value="{{stop_index}}" range="{{stops}}" range-key="value">
+        <view class="picker">
+           {{stops[stop_index]["value"] || '选择地铁站'}}
+        </view>
+      </picker>
+    </view>
+<text class='info' style='font-size: 24rpx; color: grey;'>信息均来源于上海地铁官网</text>
+    
+</view>
+
+<view class="info">
+
+    <text>
+      {{toilet_position}}
+    </text>
+
+</view>
