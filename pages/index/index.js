@@ -1003,7 +1003,7 @@ Page({
       line_index: e.detail.value,      
       stops: this.data.bigData[bigDataKey],
       stop_index: 0,
-      toilet_position: '',
+      toilet_position: this.data.bigData[bigDataKey][0].toilet_position ? this.data.bigData[bigDataKey][0].toilet_position.split("<br />").join("\n") : "无",
       headerColor: this.data.lines[n].color
     })
   },
