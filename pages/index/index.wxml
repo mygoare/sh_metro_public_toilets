@@ -17,14 +17,23 @@
         </view>
       </picker>
     </view>
-<text class='info' style='font-size: 24rpx; color: grey;'>信息均来源于上海地铁官网</text>
+  <text style='font-size: 24rpx; color: grey;'>信息均来源于上海地铁官网</text>
+    
     
 </view>
+
 
 <view class="info">
 
     <text>
       {{toilet_position}}
     </text>
+
+</view>
+
+<view style='position: fixed; bottom: 0; width: 100%;'>
+<view  class="info" style=' background-color: #FFCE65;'>
+  <text style='font-size: 24rpx; color: #fff;'>站名后带 + 号的为 站内 有厕所，无需出站</text>
+</view>
 
 </view>
