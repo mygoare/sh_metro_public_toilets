@@ -1,39 +1,33 @@
 <view class="header" style='background-color: {{headerColor}};'></view>
 <view class="page__hd">
-    <view class="section">
-      <view class="section__title"></view>
-      <picker bindchange="bindPickerChange" value="{{line_index}}" range="{{lines}}" range-key="line_name">
-        <view class="picker">
-           {{lines[line_index]["line_name"] || '选择地铁线路'}} 
-        </view>
-      </picker>
-    </view>
+  <view class="section">
+    <view class="section__title"></view>
+    <picker bindchange="bindPickerChange" value="{{line_index}}" range="{{lines}}" range-key="line_name">
+      <view class="picker">
+        {{lines[line_index]["line_name"] || '选择地铁线路'}}
+      </view>
+    </picker>
+  </view>
 
-    <view class="section">
-      <view class="section__title"></view>
-      <picker bindchange="bindStopChange" value="{{stop_index}}" range="{{stops}}" range-key="value">
-        <view class="picker">
-           {{stops[stop_index]["value"] || '选择地铁站'}}
-        </view>
-      </picker>
-    </view>
+  <view class="section">
+    <view class="section__title"></view>
+    <picker bindchange="bindStopChange" value="{{stop_index}}" range="{{stops}}" range-key="value">
+      <view class="picker">
+        {{stops[stop_index]["value"] || '选择地铁站'}}
+      </view>
+    </picker>
+  </view>
   <text style='font-size: 24rpx; color: grey;'>信息均来源于上海地铁官网</text>
-    
-    
 </view>
-
 
 <view class="info">
-
-    <text>
+  <text>
       {{toilet_position}}
     </text>
-
 </view>
 
-<view style='position: fixed; bottom: 0; width: 100%;'>
-<view  class="info" style=' background-color: #FFCE65;'>
-  <text style='font-size: 24rpx; color: #fff;'>站名后带 + 号的为 站内 有厕所，无需出站</text>
-</view>
-
+<view style='position: fixed; bottom: 0; width: 100%; box-shadow: 0 0 8rpx 4rpx #D9D9D9;'>
+  <view class="info" style=' background-color: {{headerColor}};'>
+    <text style='font-size: 22rpx; color: #fff;'>站名带 ㄟ(◑‿◐ )ㄏ 表示该站站内有厕所，无需出站 (●'◡'●)ﾉ♥</text>
+  </view>
 </view>

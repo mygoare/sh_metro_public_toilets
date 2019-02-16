@@ -8,9 +8,9 @@
 		"newFeature": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "1.9.94",
+	"libVersion": "2.4.3",
 	"appid": "wxf1d1111e3b7819e2",
-	"projectname": "sh_metro_toilet",
+	"projectname": "sh_metro_toilet_mini_program",
 	"isGameTourist": false,
 	"condition": {
 		"search": {
