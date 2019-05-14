@@ -17,8 +17,10 @@
       </view>
     </picker>
   </view>
-  <text style='font-size: 24rpx; color: grey;'>信息均来源于上海地铁官网</text>
-</view>
+  <view>
+    <text style='font-size: 24rpx; color: grey;'>数据均来源于上海地铁官网，定期更新\n任何问题请联系: mygoare@gmail.com</text>
+  </view>
+  </view>
 
 <view class="info">
   <text>
@@ -28,6 +30,6 @@
 
 <view style='position: fixed; bottom: 0; width: 100%; box-shadow: 0 0 8rpx 4rpx #D9D9D9;'>
   <view class="info" style=' background-color: {{headerColor}};'>
-    <text style='font-size: 22rpx; color: #fff;'>站名带 ㄟ(◑‿◐ )ㄏ 表示该站站内有厕所，无需出站 (●'◡'●)ﾉ♥</text>
+    <text style='font-size: 22rpx; color: #fff;'>站名带 ♥ 表示站内有厕所，无需出站</text>
   </view>
 </view>
